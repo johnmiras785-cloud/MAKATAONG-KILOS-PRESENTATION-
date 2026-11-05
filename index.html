@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b18">
+  <title>Makataong Kilos | Interactive Presentation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background-glow"></div>
+  <div class="particles" id="particles"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-icon">✦</span>
+      <span>VALUES EDUCATION <small>10</small></span>
+    </div>
+    <div class="header-actions">
+      <button id="soundBtn" class="icon-btn" aria-label="Toggle sound">🔊</button>
+      <button id="fullscreenBtn" class="icon-btn" aria-label="Fullscreen">⛶</button>
+    </div>
+  </header>
+
+  <main id="presentation">
+
+    <section class="slide active cover">
+      <div class="cover-content">
+        <span class="eyebrow">TERMINO 2 • LINGGO 8</span>
+        <div class="hero-symbol">✦</div>
+        <h1>MAKATAONG<br><span>KILOS</span></h1>
+        <p class="subtitle">Pagpili na May Pananagutan</p>
+        <div class="cover-line"></div>
+        <p class="question">
+          Paano nagiging makatao ang ating kilos<br>
+          sa pakikitungo sa kapuwa?
+        </p>
+        <button class="primary-btn" onclick="nextSlide()">
+          SIMULAN ANG PRESENTATION <span>→</span>
+        </button>
+        <p class="small-note">VALUES EDUCATION 10 • INTERACTIVE PRESENTATION</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">INTRODUCTION</span>
+        <h2>Ang ating <span>pagpili</span> ay may epekto.</h2>
+        <p class="lead">
+          Ang ating sinadyang mga pasiya ay may epekto
+          sa dignidad at kapakanan ng kapuwa.
+        </p>
+        <div class="feature-grid">
+          <article class="glass-card">
+            <div class="card-icon">🧠</div>
+            <h3>Kaalaman</h3>
+            <p>Nauunawaan ang gagawin at posibleng epekto.</p>
+          </article>
+          <article class="glass-card">
+            <div class="card-icon">🎯</div>
+            <h3>Layunin</h3>
+            <p>May dahilan o intensiyong gumagabay sa pasiya.</p>
+          </article>
+          <article class="glass-card">
+            <div class="card-icon">⚖️</div>
+            <h3>Kalayaan</h3>
+            <p>May kakayahang magpasya at umako ng pananagutan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">LINGGO 8</span>
+        <h2>Apat na <span>sesyon</span></h2>
+        <p class="lead">Mula kaalaman tungo sa makataong pagkilos.</p>
+        <div class="timeline">
+          <div class="timeline-item"><b>01</b><div><h3>Dalawang Uri ng Kilos</h3><p>Kilos ng tao at makataong kilos.</p></div></div>
+          <div class="timeline-item"><b>02</b><div><h3>Pagkukusa at Pananagutan</h3><p>Kalayaan, dignidad at pananagutan.</p></div></div>
+          <div class="timeline-item"><b>03</b><div><h3>Pagsusuri ng Pasiya</h3><p>Pagsusuri ng sitwasyon at pagpaplano.</p></div></div>
+          <div class="timeline-item"><b>04</b><div><h3>Pagganap at Pagninilay</h3><p>Maikling dula at pagpapaliwanag.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">SESYON 1 • PAGKAKAIBA</span>
+        <h2>Dalawang uri ng <span>kilos</span></h2>
+        <p class="lead">Pareho ba ang biglang pagkurap at kusang pagtulong?</p>
+        <div class="comparison">
+          <article class="glass-card">
+            <div class="big-icon">👁️</div>
+            <h3>Kilos ng Tao</h3>
+            <p>Biglang pagkurap</p>
+            <p class="muted">Awtomatiko at hindi sinasadya.</p>
+            <span class="tag">REFLEX</span>
+          </article>
+          <div class="versus">VS</div>
+          <article class="glass-card highlighted">
+            <div class="big-icon">🤝</div>
+            <h3>Makataong Kilos</h3>
+            <p>Kusang pagtulong</p>
+            <p class="muted">May kamalayan at layuning makatulong.</p>
+            <span class="tag">MAY PASIYA</span>
+          </article>
+        </div>
+        <p class="bottom-note">Tanungin: May kaalaman ba? May layunin ba? May kalayaan bang pumili?</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">SESYON 1 • KAHULUGAN</span>
+        <h2>Ano ang <span>makataong kilos?</span></h2>
+        <p class="lead">
+          Human act ang kilos na pinag-isipan at malayang pinili
+          nang may kaalaman at layunin.
+        </p>
+        <div class="steps-grid">
+          <div class="step-card">
+            <span>01</span><div class="step-icon">🧠</div>
+            <h3>May Kaalaman</h3>
+            <p>Nauunawaan ang gagawin at posibleng epekto.</p>
+          </div>
+          <div class="step-card">
+            <span>02</span><div class="step-icon">🎯</div>
+            <h3>May Layunin</h3>
+            <p>May dahilan o intensiyong gumabay sa pasiya.</p>
+          </div>
+          <div class="step-card">
+            <span>03</span><div class="step-icon">⚖️</div>
+            <h3>May Pagpili</h3>
+            <p>May kakayahang magpasya at umako ng pananagutan.</p>
+          </div>
+        </div>
+        <div class="info-banner">
+          HALIMBAWA: Sinadya mong ibalik ang napulot na ID dahil alam mong may-ari ito.
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">SESYON 1 • KAHULUGAN</span>
+        <h2>Kilos ng <span>tao</span></h2>
+        <p class="lead">
+          Acts of man ang natural, awtomatiko o hindi
+          sinasadyang kilos ayon sa pinagmulan ng pagkilos.
+        </p>
+        <div class="example-grid">
+          <div class="example-card"><span>🤧</span><h3>Pagbahing</h3><p>Kusang reaksiyon ng katawan.</p></div>
+          <div class="example-card"><span>👁️</span><h3>Pagkurap</h3><p>Maaaring awtomatiko at hindi sinasadya.</p></div>
+          <div class="example-card"><span>😮‍💨</span><h3>Pag-ubo</h3><p>Maaaring reflex na wala sa kontrol.</p></div>
+        </div>
+        <div class="info-banner">Mahalagang suriin ang konteksto ng bawat kilos.</div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">SESYON 1 • PAGHAHAMBING</span>
+        <h2>Ang mahalaga ay <span>layunin</span></h2>
+        <p class="lead">Hindi lang kung ano ang ginawa, kundi paano at bakit ito ginawa.</p>
+        <div class="comparison">
+          <article class="glass-card">
+            <div class="big-icon">🤧</div>
+            <h3>Kilos ng Tao</h3>
+            <p>Pagbahing dahil sa alikabok.</p>
+            <span class="tag">HINDI SINADYA</span>
+          </article>
+          <div class="versus">VS</div>
+          <article class="glass-card highlighted">
+            <div class="big-icon">🙋</div>
+            <h3>Makataong Kilos</h3>
+            <p>Pag-amin sa sariling pagkakamali.</p>
+            <span class="tag">MAY INTENSIYON</span>
+          </article>
+        </div>
+        <p class="bottom-note">Hindi lahat ng pagtawa o pag-iyak ay awtomatiko. Mahalaga ang tunay na konteksto.</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">SESYON 1 • SITWASYON</span>
+        <h2>Ang napulot na <span>ID</span></h2>
+        <div class="story-card">
+          <div class="story-icon">🪪</div>
+          <p>
+            Nakakita si Lara ng ID sa silid-aralan.
+            Hinanap niya ang may-ari at ibinalik ito.
+          </p>
+        </div>
+        <h3 class="accent-text">Bakit ito makataong kilos?</h3>
+        <div class="reason-list">
+          <p>✓ Alam niyang may-ari ang ID.</p>
+          <p>✓ May layuning makatulong.</p>
+          <p>✓ Malayang pinili niyang ibalik ito.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">SESYON 1 • MAHALAGANG PAGLILINAW</span>
+        <h2>Hindi sapat ang <span>galaw</span></h2>
+        <div class="feature-grid">
+          <article class="glass-card">
+            <div class="card-icon">😲</div>
+            <h3>Natawa sa sorpresa</h3>
+            <p>Biglang natawa dahil nabigla.</p>
+          </article>
+          <article class="glass-card highlighted">
+            <div class="card-icon">😏</div>
+            <h3>Sinadyang mangutya</h3>
+            <p>Inulit ang pagtawa upang ipahiya ang kaklase.</p>
+          </article>
+        </div>
+        <div class="info-banner">
+          Alamin ang intensiyon at sitwasyon. Iwasang humusga agad.
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">SESYON 2 • PAGKUKUSA</span>
+        <h2>Tatlong uri ng <span>pagkukusa</span></h2>
+        <div class="three-cards">
+          <article class="glass-card">
+            <span class="number">01</span>
+            <h3>Kusang-loob</h3>
+            <p>May kaalaman at malayang pinili ang gagawin.</p>
+          </article>
+          <article class="glass-card">
+            <span class="number">02</span>
+            <h3>Walang kusang-loob</h3>
+            <p>Hindi sinasadya o laban sa kagustuhan ng tao.</p>
+          </article>
+          <article class="glass-card">
+            <span class="number">03</span>
+            <h3>Di kusang-loob</h3>
+            <p>Hindi lubos na malaya dahil sa pangangailangan, impluwensiya o pamimilit.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">SESYON 2 • PANANAGUTAN</span>
+        <h2>Magkaugnay ang <span>pagkukusa</span> at pananagutan</h2>
+        <div class="steps-grid">
+          <div class="step-card"><span>01</span><div class="step-icon">🧠</div><h3>Kaalaman</h3><p>Alam ba ng tao ang katotohanan at maaaring kahinatnan?</p></div>
+          <div class="step-card"><span>02</span><div class="step-icon">🕊️</div><h3>Kalayaan</h3><p>May tunay bang pagpipilian o may mabigat na banta?</p></div>
+          <div class="step-card"><span>03</span><div class="step-icon">⚖️</div><h3>Pananagutan</h3><p>Ano ang makatuwirang pananagutan sa pangyayari?</p></div>
+        </div>
+        <div class="info-banner">Suriin ang konteksto bago magpasiya. Iwasan ang mabilis na paglalabel sa tao.</div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">SESYON 2 • PAGPAPAHALAGA</span>
+        <h2>Ano ang <span>dignidad?</span></h2>
+        <div class="dignity-symbol">✧</div>
+        <p class="lead">
+          Pagkilala sa likas na halaga, karapatan at karangalan
+          ng bawat tao, kabilang ang mga taong hindi natin sinasang-ayunan.
+        </p>
+        <div class="info-banner">
+          Ang pagtutuwid sa maling kilos ay maaaring gawin nang hindi nang-iinsulto o nanghuhusga.
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">SESYON 2 • PAGPAPASIYA</span>
+        <h2>Pumili ng <span>ligtas na tugon</span></h2>
+        <div class="comparison">
+          <article class="glass-card">
+            <div class="big-icon">😟</div>
+            <h3>Pumayag dahil sa pressure</h3>
+            <p>Maaaring may impluwensiya o takot.</p>
+          </article>
+          <div class="versus">OR</div>
+          <article class="glass-card highlighted">
+            <div class="big-icon">🛡️</div>
+            <h3>Tumanggi at humingi ng tulong</h3>
+            <p>Ipinakikita ang pag-iingat sa sarili at iba.</p>
+          </article>
+        </div>
+        <div class="info-banner">
+          Hindi kailangang sumunod sa mapanganib na alok. Humingi ng tulong sa angkop na nakatatanda.
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">SESYON 3 • PAGSUSURI</span>
+        <h2>Limang hakbang ng <span>pagsusuri</span></h2>
+        <div class="timeline">
+          <div class="timeline-item"><b>01</b><div><h3>Sitwasyon</h3><p>Ano ang nangyari?</p></div></div>
+          <div class="timeline-item"><b>02</b><div><h3>Kaalaman</h3><p>Ano ang alam ng tauhan?</p></div></div>
+          <div class="timeline-item"><b>03</b><div><h3>Pagpili</h3><p>May kalayaan ba?</p></div></div>
+          <div class="timeline-item"><b>04</b><div><h3>Bunga</h3><p>Sino ang apektado?</p></div></div>
+          <div class="timeline-item"><b>05</b><div><h3>Dignidad</h3><p>May paggalang ba?</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">SESYON 3 • HALIMBAWA</span>
+        <h2>Nawalang <span>pitaka</span></h2>
+        <div class="story-card">
+          <div class="story-icon">👛</div>
+          <p>May nakitang pitaka sa pasilyo.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="glass-card highlighted">
+            <h3>A. Ibinalik</h3>
+            <p>Naisip ang may-ari at ibinalik sa opisina.</p>
+            <span class="tag">PAGGALANG</span>
+          </article>
+          <article class="glass-card">
+            <h3>B. Itinago</h3>
+            <p>Kinuha ang pera kahit alam na may nawawalan.</p>
+            <span class="tag">MALING PASIYA</span>
+          </article>
+        </div>
+        <div class="info-banner">
+          Parehong maaaring sinadyang kilos. Ang A ay kusang tumutulong; ang B ay kusang nananakit sa kapakanan ng may-ari.
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">SESYON 3 • PAGHAHANDA</span>
+        <h2>Mula sitwasyon tungo sa <span>dula</span></h2>
+        <div class="feature-grid">
+          <article class="glass-card"><h3>01 • Tauhan</h3><p>Sino ang haharap sa pagpili?</p></article>
+          <article class="glass-card"><h3>02 • Suliranin</h3><p>Ano ang dapat pagpasiyahan?</p></article>
+          <article class="glass-card"><h3>03 • Pasiya</h3><p>Ano ang isinadyang gawin?</p></article>
+          <article class="glass-card"><h3>04 • Bunga</h3><p>Anong epekto nito sa iba?</p></article>
+          <article class="glass-card"><h3>05 • Aral</h3><p>Ano ang natutuhan tungkol sa pananagutan?</p></article>
+        </div>
+        <div class="info-banner">
+          Maaaring gumawa ng 3–5 minutong dula, storyboard o narrated performance.
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">SESYON 4 • PAGGANAP</span>
+        <h2>Ang naiwan sa <span>silid</span></h2>
+        <div class="dialogue">
+          <p><b>Ana:</b> Napabahing! Ang alikabok ng mga lumang aklat.</p>
+          <p><b>Ben:</b> May naiwan na wallet dito. Ano kaya ang gagawin natin?</p>
+          <p><b>Ana:</b> Alam kong mahalaga ito sa may-ari. Ibigay natin sa guro.</p>
+          <p><b>Ben:</b> Sang-ayon ako. Hindi natin ito pag-aari.</p>
+          <p><b>Tagapagsalaysay:</b> Napabahing si Ana nang di sinasadya. Ang pagbabalik ay pinagpasyahan.</p>
+        </div>
+        <div class="info-banner">
+          Ang pagbahing ay kilos ng tao. Ang pagbabalik ay makataong kilos.
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">SESYON 4 • RUBRIC</span>
+        <h2>Pamantayan sa <span>pagtatanghal</span></h2>
+        <div class="reason-list rubric-list">
+          <p><span>01</span> Uri ng kilos — malinaw ang dalawang magkaibang uri.</p>
+          <p><span>02</span> Kaalaman at layunin — ipinakita kung bakit may pagpili.</p>
+          <p><span>03</span> Pagkukusa — naipaliwanag ang kalayaan.</p>
+          <p><span>04</span> Dignidad — may paggalang sa kapuwa.</p>
+          <p><span>05</span> Aral — may malinaw na pananagutan at mensahe.</p>
+        </div>
+        <div class="score-box"><strong>10 PUNTOS</strong><span>0–2 puntos bawat pamantayan</span></div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-content">
+        <span class="eyebrow">LINGGUHANG REVIEW</span>
+        <h2>Dalhin ang aral sa <span>araw-araw</span></h2>
+        <div class="review-grid">
+          <div><b>01</b><h3>Uriin</h3><p>Awtomatiko ba o may pinag-isipang pasiya?</p></div>
+          <div><b>02</b><h3>Alamin</h3><p>May kaalaman at tunay na layunin?</p></div>
+          <div><b>03</b><h3>Timbangin</h3><p>Gaano kalaya ang tao sa sitwasyon?</p></div>
+          <div><b>04</b><h3>Igalang</h3><p>Sino ang apektado at paano iingatan ang dignidad?</p></div>
+        </div>
+        <div class="warning-banner">
+          MAKATAONG KILOS ≠ LAGING MABUTI
+          <p>Maaari ring may maling sinadyang pasiya.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide quiz-intro">
+      <div class="slide-content centered">
+        <div class="quiz-symbol">🎮</div>
+        <span class="eyebrow">CHALLENGE TIME</span>
+        <h2>NASUBOK MO BA ANG <span>IYONG KAALAMAN?</span></h2>
+        <p class="lead">Subukan ang iyong natutuhan tungkol sa Makataong Kilos!</p>
+        <div class="score-box"><strong>10 QUESTIONS</strong><span>Choose the correct answer</span></div>
+        <button class="primary-btn" onclick="startQuiz()">START QUIZ →</button>
+      </div>
+    </section>
+
+    <section class="slide quiz-slide">
+      <div class="slide-content quiz-container">
+        <span class="eyebrow">KNOWLEDGE CHALLENGE</span>
+        <div class="quiz-top">
+          <span id="questionNumber">QUESTION 1/10</span>
+          <span id="scoreDisplay">SCORE: 0</span>
+        </div>
+        <div class="quiz-progress"><div id="quizProgress"></div></div>
+        <h2 id="questionText">Question goes here</h2>
+        <div id="answerOptions" class="answer-options"></div>
+        <p id="feedback" class="feedback"></p>
+        <button id="nextQuestionBtn" class="primary-btn hidden" onclick="nextQuestion()">NEXT QUESTION →</button>
+      </div>
+    </section>
+
+    <section class="slide result-slide">
+      <div class="slide-content centered">
+        <div class="result-icon">🏆</div>
+        <span class="eyebrow">CHALLENGE COMPLETED</span>
+        <h2 id="resultTitle">WELL DONE!</h2>
+        <div class="final-score"><span id="finalScore">0</span><small>/ 10</small></div>
+        <p id="resultMessage" class="lead"></p>
+        <button class="primary-btn" onclick="showThankYou()">CONTINUE →</button>
+      </div>
+    </section>
+
+    <section class="slide thankyou-slide">
+      <div class="slide-content centered">
+        <div class="thank-glow">✦</div>
+        <span class="eyebrow">VALUES EDUCATION 10</span>
+        <h1 class="thank-title">THANK <span>YOU!</span></h1>
+        <p class="lead">For your time, attention and participation.</p>
+        <button class="envelope" id="envelopeBtn" onclick="openCredits()" aria-label="Open credits">
+          <span>✉</span>
+          <small>OPEN OUR CREDITS</small>
+        </button>
+        <div id="creditsPaper" class="credits-paper">
+          <div class="paper-content">
+            <div class="paper-star">✦</div>
+            <h2>THE REPORTERS</h2>
+            <p class="paper-subtitle">PRESENTED BY</p>
+            <div class="member-list">
+              <p>JOHN REYNARD MIRAS</p>
+              <p>ARCHEL VOSOTROS</p>
+              <p>CARL JAMES BERNALES</p>
+              <p>IRA CAÑADA</p>
+              <p>JC KENT RAMOS</p>
+            </div>
+            <div class="paper-footer">THANK YOU FOR LISTENING ✦</div>
+          </div>
+        </div>
+        <button class="restart-btn" onclick="restartPresentation()">↻ RESTART PRESENTATION</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="controls" id="controls">
+    <button id="prevBtn" class="nav-btn" onclick="prevSlide()">← PREVIOUS</button>
+    <div class="slide-indicator">
+      <span id="currentSlide">01</span>
+      <div class="indicator-line"><div id="indicatorFill"></div></div>
+      <span id="totalSlides">20</span>
+    </div>
+    <button id="nextBtn" class="nav-btn next" onclick="nextSlide()">NEXT →</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
