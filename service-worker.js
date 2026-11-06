@@ -1,5 +1,5 @@
 
-const CACHE_NAME = "makataong-kilos-offline-v1";
+const CACHE_NAME = "makataong-kilos-v1";
 
 const FILES_TO_CACHE = [
   "./",
@@ -35,7 +35,7 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
-// Serve cached files offline
+// Offline support
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
 
@@ -45,23 +45,26 @@ self.addEventListener("fetch", (event) => {
         return cachedResponse;
       }
 
-      return fetch(event.request).then((networkResponse) => {
+      return fetch(event.request).then((response) => {
         if (
-          networkResponse &&
-          networkResponse.status === 200 &&
-          networkResponse.type === "basic"
+          response &&
+          response.status === 200 &&
+          response.type === "basic"
         ) {
-          const responseCopy = networkResponse.clone();
+          const responseCopy = response.clone();
 
           caches.open(CACHE_NAME).then((cache) => {
             cache.put(event.request, responseCopy);
           });
         }
 
-        return networkResponse;
-      }).catch(() => {
-        return caches.match("./index.html");
+        return response;
       });
+    }).catch(() => {
+      if (event.request.mode === "navigate") {
+        return caches.match("./index.html");
+      }
     })
   );
 });
+
