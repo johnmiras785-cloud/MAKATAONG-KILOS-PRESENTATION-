@@ -1,0 +1,16 @@
+
+{
+  "name": "Makataong Kilos - Interactive Presentation",
+  "short_name": "Makataong Kilos",
+  "description": "Offline interactive presentation tungkol sa Makataong Kilos at Pagpili na May Pananagutan.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#050816",
+  "theme_color": "#080b1c",
+  "lang": "fil",
+  "categories": [
+    "education"
+  ]
+}
