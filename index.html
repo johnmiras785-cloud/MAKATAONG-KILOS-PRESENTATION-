@@ -488,25 +488,16 @@
   </footer>
 
 <script src="script.js"></script>
-
-<script>
+  
+<script> 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker
-      .register("./service-worker.js")
-      .then(() => {
-        console.log("Offline mode is ready!");
-      })
-      .catch((error) => {
-        console.error("Service Worker error:", error);
-      });
+    navigator.serviceWorker.register("./service-worker.js")
+      .then(() => console.log("Offline mode ready"))
+      .catch(error => console.error("Service Worker error:", error));
   });
 }
 </script>
-
-</body>
-</html>
   
-
 </body>
 </html>
